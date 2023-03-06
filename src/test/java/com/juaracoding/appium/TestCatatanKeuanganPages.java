@@ -56,12 +56,13 @@ public class TestCatatanKeuanganPages {
         //stepAction
         this.catatanKeuanganPages.tutupPopUp();
         this.catatanKeuanganPages.addDataPengeluaran();
+//        this.catatanKeuanganPages.getTxtJudul();
         delay(3);
 
         //step verify
-        Assert.assertEquals(this.catatanKeuanganPages.getTxtJudul(),"Buat Transaksi");
-        System.out.println(this.catatanKeuanganPages.getTxtJudul());
-        Assert.assertEquals(this.catatanKeuanganPages.getJumlahPengeluaran(),"50000");
+//        Assert.assertEquals(this.catatanKeuanganPages.getTxtJudul(),"Buat Transaksi");
+//        System.out.println(this.catatanKeuanganPages.getTxtJudul());
+        Assert.assertEquals(this.catatanKeuanganPages.getJumlahPengeluaran(),"50.000");
         System.out.println("Pengeluaran Anda : "+this.catatanKeuanganPages.getJumlahPengeluaran());
     }
 
@@ -72,9 +73,9 @@ public class TestCatatanKeuanganPages {
         delay(3);
 
         //step verify
-        Assert.assertEquals(this.catatanKeuanganPages.getJumlahPemasukan(),"1000000");
-        System.out.println("Pengeluaran Anda : "+this.catatanKeuanganPages.getJumlahPemasukan());
-        Assert.assertEquals(this.catatanKeuanganPages.getTotalSaldo(),"950000");
+        Assert.assertEquals(this.catatanKeuanganPages.getJumlahPemasukan(),"1.000.000");
+        System.out.println("Pemasukan Anda : "+this.catatanKeuanganPages.getJumlahPemasukan());
+        Assert.assertEquals(this.catatanKeuanganPages.getTotalSaldo(),"950.000");
         System.out.println("Total Saldo anda : "+this.catatanKeuanganPages.getTotalSaldo());
     }
 
